@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N77V675');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W044M90TKH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag () { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-W044M90TKH');
+    </script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="wrap">
+        <img src="image/KV2.png" alt="" class="img-fluid KV">
+    </div>
+
+    <main>
+        <section>
+            <div class="container con-dataLayer">
+                <div class="inner">
+                    <div class="custom-event">
+                        <h2>
+                            自訂事件
+                        </h2>
+                        <div class="data">
+                            <label for="event">event : </label>
+                            <input type="text" id="event" name="event" value="ga4_cusevent" disabled><br>
+                            <label for="event_name">event_name : </label>
+                            <input type="text" id="event_name" name="event_name" value="" disabled><br>
+                            <label for="parm1">parm1 : </label>
+                            <input type="text" id="parm1" name="parm1"><br>
+                            <label for="parm2">parm2 : </label>
+                            <input type="text" id="parm2" name="parm2"><br>
+                            <label for="parm3">parm3 : </label>
+                            <input type="text" id="parm3" name="parm3"><br>
+                            <label for="parm4">parm4 : </label>
+                            <input type="text" id="parm4" name="parm4"><br>
+                            <label for="parm5">parm5 : </label>
+                            <input type="text" id="parm5" name="parm5"><br>
+                            <label for="remark">remark : </label>
+                            <input type="text" id="remark" name="remark"><br>
+                        </div>
+                        <button class="btn-custom-event" type="button">Submit</button>
+                    </div>
+                    <div class="ec-event">
+                        <h2>
+                            電商事件
+                        </h2>
+                        <div class="data">
+                            <label for="event">event : </label>
+                            <input type="text" id="ec_event" name="ec_event" value="ec_cusevent" disabled><br>
+                            <label for="ec_event_name">event_name : </label>
+                            <input type="text" id="ec_event_name" name="ec_event_name" value=""><br>
+                            <label for="currency">currency : </label>
+                            <input type="text" id="currency" name="currency"><br>
+                            <label for="value">value : </label>
+                            <input type="text" id="value" name="value"><br>
+                            <label> items : [ {</label>
+                            <div>
+                                <label for="item_id">item_id : </label>
+                                <input type="text" id="item_id" name="item_id"><br>
+                                <label for="item_name">item_name : </label>
+                                <input type="text" id="item_name" name="item_name"><br>
+                                <label for="affiliation">affiliation : </label>
+                                <input type="text" id="affiliation" name="affiliation"><br>
+                                <label for="coupon">coupon : </label>
+                                <input type="text" id="coupon" name="coupon"><br>
+                                <label for="item_currency">currency : </label>
+                                <input type="text" id="item_currency" name="item_currency"><br>
+                                <label for="discount">discount : </label>
+                                <input type="text" id="discount" name="discount"><br>
+                                <label for="index">index : </label>
+                                <input type="text" id="index" name="index"><br>
+                                <label for="item_brand">item_brand : </label>
+                                <input type="text" id="item_brand" name="item_brand"><br>
+                                <label for="item_category">item_category : </label>
+                                <input type="text" id="item_category" name="item_category"><br>
+                                <label for="item_category2">item_category2 : </label>
+                                <input type="text" id="item_category2" name="item_category2"><br>
+                                <label for="item_category3">item_category3 : </label>
+                                <input type="text" id="item_category3" name="item_category3"><br>
+                                <label for="item_category4">item_category4 : </label>
+                                <input type="text" id="item_category4" name="item_category4"><br>
+                                <label for="item_category5">item_category5 : </label>
+                                <input type="text" id="item_category5" name="item_category5"><br>
+                                <label for="item_list_id">item_list_id : </label>
+                                <input type="text" id="item_list_id" name="item_list_id"><br>
+                                <label for="item_list_name">item_list_name : </label>
+                                <input type="text" id="item_list_name" name="item_list_name"><br>
+                                <label for="item_variant">item_variant : </label>
+                                <input type="text" id="item_variant" name="item_variant"><br>
+                                <label for="location_id">location_id : </label>
+                                <input type="text" id="location_id" name="location_id"><br>
+                                <label for="price">price : </label>
+                                <input type="text" id="price" name="price"><br>
+                                <label for="quantity">quantity : </label>
+                                <input type="text" id="quantity" name="quantity"><br>
+                            </div>
+                            <label>} ]</label>
+                        </div>
+                        <button class="btn-ec-event" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- 
+        <section>
+            <div class="container con-intro">
+                <div class="inner">
+                    <div class="txt">
+                        <h2>何謂<strong>“社畜”</strong>？</h2>
+                        <p>
+                            根據維基百科解釋，社畜是<span>日本企業底層上班族的自嘲用語</span>，詞語源於「會社」與「家畜」，意思為「<span>公司的牲畜</span>」，最早出現在日本20世紀90年代，隨後在東亞世界逐漸流行。一般用來自嘲或嘲笑，他人為了企業放棄身為人類的尊嚴，睡眠和飲食都草草了事，拚命的為企業效勞。
+                        </p>
+                    </div>
+                    <div class="pic">
+                        <img src="image/社畜2.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="container con-category">
+                <div class="inner">
+                    <h2>
+                        <strong>“社畜”</strong>
+                        的五種分類學
+                        <span>
+                            摘錄自《別扯工作意義，先交出我的加班費！》
+                        </span>
+                    </h2>
+                    <div class="pic">
+                        <img src="image/奴隸型社畜.png" alt="" class="img-fluid">
+                        <img src="image/忠犬小八型社畜.png" alt="" class="img-fluid">
+                        <img src="image/寄生蟲型社畜.png" alt="" class="img-fluid">
+                        <img src="image/馬屁型社畜.png" alt="" class="img-fluid">
+                        <img src="image/殭屍型社畜.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="txt">
+                        <h3>奴隸型社畜</h3>
+                        <p>「奴隸型社畜」如字面上所示，就是像「奴隸」一樣被公司呼來喝去的社畜。</p>
+                        <p> 被迫免費加班、請特休會遇到重重阻礙，在完全不顧慮勞基法的公司裡，被迫宛如奴隸般地工作。</p>
+                    </div>
+                    <div class="txt">
+                        <h3>忠犬小八型社畜</h3>
+                        <p>所謂「忠犬小八型社畜」就是深愛公司、強烈相信自己會和公司一起成長，對公司擁有高度忠誠心的社畜。</p>
+                    </div>
+                    <div class="txt">
+                        <h3>寄生蟲型社畜</h3>
+                        <p>「寄生蟲型社畜」就是無論發生什麼事都要緊抓住公司不放的社畜。他們徹底依賴公司。工作能力沒有特別好，甚至對公司來說，其實很困擾。</p>
+                    </div>
+                    <div class="txt">
+                        <h3>馬屁型社畜</h3>
+                        <p>「馬屁型社畜」就是拚命對上司和前輩阿諛奉承，盡全力保住自己公司內部職位的社畜。</p>
+                    </div>
+                    <div class="txt">
+                        <h3>殭屍型社畜</h3>
+                        <p>「殭屍型社畜」意指不只自己當社畜就好，沒把其他人也變成社畜就會不甘心的類型。</p>
+                        <p> 殭屍會傳播殭屍病毒，讓周遭的人也像自己一樣變成殭屍，而殭屍型社畜也會把自己的價值觀灌輸給非社畜的同事，把他們也變成像自己一樣的社畜。</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+         -->
+    </main>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N77V675" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+</html>
