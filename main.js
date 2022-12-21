@@ -12,12 +12,12 @@ document.querySelector('.btn-custom-event').addEventListener('click', e => {
   console.log('test')
   let event = "ga4_cusevent";
   let event_name = document.querySelector("#event_name").value;
-  let parm1 = document.querySelector("#parm1").value;
-  let parm2 = document.querySelector("#parm2").value;
-  let parm3 = document.querySelector("#parm3").value;
-  let parm4 = document.querySelector("#parm4").value;
-  let parm5 = document.querySelector("#parm5").value;
-  let remark = document.querySelector("#remark").value;
+  let parm1 = document.querySelector("#parm1").value == 'undefined' ? undefined : document.querySelector("#parm1").value;
+  let parm2 = document.querySelector("#parm2").value == 'undefined' ? undefined : document.querySelector("#parm2").value;
+  let parm3 = document.querySelector("#parm3").value == 'undefined' ? undefined : document.querySelector("#parm3").value;
+  let parm4 = document.querySelector("#parm4").value == 'undefined' ? undefined : document.querySelector("#parm4").value;
+  let parm5 = document.querySelector("#parm5").value == 'undefined' ? undefined : document.querySelector("#parm5").value;
+  let remark = document.querySelector("#remark").value == 'undefined' ? undefined : document.querySelector("#remark").value;
   dataLayer.push(
     {
       "event": event,
