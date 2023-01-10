@@ -70,7 +70,7 @@ document.querySelector('.btn-ec-event').addEventListener('click', e => {
       "event_name": event_name ? event_name : undefined,
       "currency": currency ? currency : undefined,
       "value": Number(value) ? Number(value) : undefined,
-      
+
       "coupon": coupon ? coupon : undefined,
       "payment_type": payment_type ? payment_type : undefined,
       "transaction_id": transaction_id ? transaction_id : undefined,
@@ -104,5 +104,6 @@ document.querySelector('.btn-ec-event').addEventListener('click', e => {
     }
   )
 })
+
 
 
