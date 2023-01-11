@@ -107,3 +107,25 @@ document.querySelector('.btn-ec-event').addEventListener('click', e => {
 
 
 
+// ===========================
+
+document.querySelectorAll('.con-category .pic img').forEach(item => {
+  item.addEventListener('click', e => {
+
+    document.querySelector('.con-category .txt.show').className = 'txt';
+
+    document.querySelector(`.con-category .txt-group .txt[data-title="${e.target.alt}"]`).className = 'txt show';
+
+    dataLayer.push(
+      {
+        "event": 'ga4_cusevent',
+        "event_name": 'watch_category',
+        "click": 'image',
+        "title": e.target.alt,
+        "remark": undefined
+      }
+    )
+
+  })
+});
+
