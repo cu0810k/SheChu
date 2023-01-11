@@ -119,7 +119,7 @@ document.querySelectorAll('.con-category .pic img').forEach(item => {
     dataLayer.push(
       {
         "event": 'ga4_cusevent',
-        "event_name": 'category',
+        "event_name": 'ev_category',
         "chu_click": 'image',
         "chu_title": e.target.alt,
         "remark": undefined
