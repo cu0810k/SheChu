@@ -128,26 +128,3 @@ document.querySelectorAll('.con-category .pic img').forEach(item => {
 
   })
 });
-
-
-
-
-// 
-
-
-let requestID;
-const figure = document.querySelector("#figure")
-
-var width = 0;
-function moveFigure() {
-  console.log('123');
-  width ++;
-  figure.style.width = width +"px"
-  requestID = requestAnimationFrame(moveFigure, 5000 / 60);
-
-  if(width == 200){
-    cancelAnimationFrame(requestID) // 動畫停止
-
-  }
-}
-moveFigure(); // 動畫開始
