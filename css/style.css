@@ -1,238 +1,265 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-body, html {
-    font-size: 16px;
-    font-family: 'Noto Sans TC', sans-serif;
+body,
+html {
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif;
 }
-
 
 img {
-    vertical-align: middle;
-    max-width: 100%;
-    width: auto;
-    height: auto;
+  vertical-align: middle;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 p {
-    line-height: 1.5rem;
-    letter-spacing: 1px;
-    text-indent: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  text-indent: 2rem;
 }
 
 p span {
-    background: linear-gradient(0deg, #fff300 0%, #fff300 40%, transparent 40%, transparent 100%);
+  background: linear-gradient(
+    0deg,
+    #fff300 0%,
+    #fff300 40%,
+    transparent 40%,
+    transparent 100%
+  );
 }
 
-h1, h2, h3 {
-    font-family: 'Mochiy Pop P One', sans-serif;
-    margin: 20px 0;
+h1,
+h2,
+h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  margin: 20px 0;
 }
 
 h2 {
-    text-align: center;
-    font-size: 2.5rem;
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 h2 strong {
-    color: #db2b2b;
-    font-size: 3rem;
+  color: #db2b2b;
+  font-size: 3rem;
 }
 
 .wrap {
-    background: #db2b2b;
+  background: #db2b2b;
 }
 
 .wrap::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 5px;
-    background: url(../image/border-top.png) repeat no-repeat;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background: url(../image/border-top.png) repeat no-repeat;
 }
 
 .KV {
-    margin: auto;
-    display: block;
-    padding: 80px 0;
+  margin: auto;
+  display: block;
+  padding: 80px 0;
 }
 
 .container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .con-intro .inner {
-    display: flex;
-    margin: 100px 0;
+  display: flex;
+  margin: 100px 0;
 }
 
 .con-intro .inner .txt,
 .con-intro .inner .pic {
-    padding: 0 15px;
+  padding: 0 15px;
 }
 
 .con-intro .inner .txt {
-    width: 60%;
+  width: 60%;
 }
 
 .con-intro .inner .pic {
-    width: 40%;
+  width: 40%;
 }
 
 .con-intro .inner .pic {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-
-
+.con-test .inner,
 .con-category .inner,
 .con-dataLayer .inner {
-    border: 4px solid #000;
-    border-radius: 10px;
-    background-image: radial-gradient(#b4b4b4 20%, transparent 20%),
-        radial-gradient(#b4b4b4 20%, transparent 20%);
-    background-position: 0 0, 25px 25px;
-    background-size: 10px 10px;
-    overflow: hidden;
-    padding-bottom: 30px;
+  border: 4px solid #000;
+  border-radius: 10px;
+  background-image: radial-gradient(#b4b4b4 20%, transparent 20%),
+    radial-gradient(#b4b4b4 20%, transparent 20%);
+  background-position: 0 0, 25px 25px;
+  background-size: 10px 10px;
+  overflow: hidden;
+  padding-bottom: 30px;
 }
 
+.con-test h2,
 .con-category h2,
 .con-dataLayer h2 {
-    margin: 0;
-    padding: 15px 0;
-    position: relative;
-    background: #fff;
-    border-bottom: 4px solid #000;
+  margin: 0;
+  padding: 15px 0;
+  position: relative;
+  background: #fff;
+  border-bottom: 4px solid #000;
 }
 
 .con-category h2 span {
-    font-size: .8rem;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    margin: 15px;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 15px;
 }
 
 .con-category .pic {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 30px 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px 0 10px 0;
 }
 
 .con-category .pic img {
-    margin: 0 15px;
-    cursor: pointer;
-    position: relative;
-    /* max-width:130px; */
-    top: 0px;
-    transition: top .3s;
+  margin: 0 15px;
+  cursor: pointer;
+  position: relative;
+  /* max-width:130px; */
+  top: 0px;
+  transition: top 0.3s;
 }
 
 .con-category .pic img:hover {
-    top: -10px;
-    transition: top .3s;
+  top: -10px;
+  transition: top 0.3s;
 }
 
-.con-category h3 {}
+.con-category h3 {
+}
 
-.con-category .txt-group{
-    position: relative;
+.con-category .txt-group {
+  position: relative;
+}
+
+.con-test p,
+.con-category .txt {
+  padding: 0 15px;
 }
 
 .con-category .txt {
-    padding: 0 15px;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  transition: left 0s 0s, opacity 1s;
 }
 
-.con-category .txt{
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 100%;
-    transition: left 0s 0s, opacity 1s;
-}
-
-.con-category .txt.show{
-    position: relative;
-    opacity: 1;
-    left: 0;
-    transition: left 0s 0s, opacity 1s;
+.con-category .txt.show {
+  position: relative;
+  opacity: 1;
+  left: 0;
+  transition: left 0s 0s, opacity 1s;
 }
 
 .con-category p {
-    text-indent: 0rem;
-    background: #fff;
-    display: inline-block;
-    box-shadow: 3px 3px 0px 0px #000;
-    border: 1px solid #000;
+  text-indent: 0rem;
+  background: #fff;
+  display: inline-block;
+  box-shadow: 3px 3px 0px 0px #000;
+  border: 1px solid #000;
 }
 
+.con-test p {
+  text-indent: 0rem;
+  background: #fff;
+  display: inline-block;
+  box-shadow: 3px 3px 0px 0px #000;
+  border: 1px solid #000;
+  margin: 15px;
+}
 
 .con-dataLayer .inner {
-    background: #fff;
-    margin: 100px auto;
-    padding-bottom: 0px;
-    display: flex;
+  background: #fff;
+  margin: 100px auto;
+  padding-bottom: 0px;
+  display: flex;
 }
 
 .con-dataLayer .inner .custom-event,
 .con-dataLayer .inner .ec-event {
-    width: 50%;
+  width: 50%;
 }
-
 
 .con-dataLayer .data {
-    padding: 20px;
+  padding: 20px;
 }
 
-
 :focus-visible {
-    outline: 0;
+  outline: 0;
 }
 
 .custom-event {
-    border-right: 4px solid #000;
+  border-right: 4px solid #000;
 }
 
 .custom-event label,
 .ec-event label {
-    margin: 10px 10px 10px 0px;
-    display: inline-block;
+  margin: 10px 10px 10px 0px;
+  display: inline-block;
 }
 
 .ec-event .data div {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .con-dataLayer .inner button {
-    padding: 10px 20px;
-    margin: auto;
-    display: block;
-    font-size: 1.1rem;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    border: 0;
-    border-radius: 10px;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    transition: .1s all;
-    margin-bottom: 20px;
+  padding: 10px 20px;
+  margin: auto;
+  display: block;
+  font-size: 1.1rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+  border: 0;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.1s all;
+  margin-bottom: 20px;
 }
 
 .con-dataLayer .inner button:hover {
-    background: #db2b2b;
-    transition: .1s all;
+  background: #db2b2b;
+  transition: 0.1s all;
+}
+
+section:has(.con-test) {
+  background: #db2b2b;
+  padding: 50px 0;
+  margin: 50px auto;
+}
+
+.con-test .inner {
+  background-image: radial-gradient(#b4b4b4 20%, #fff 20%),
+    radial-gradient(#b4b4b4 20%, #fff 20%);
 }
