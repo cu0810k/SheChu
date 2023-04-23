@@ -103,9 +103,7 @@ h2 strong {
   align-items: center;
 }
 
-.con-test .inner,
-.con-category .inner,
-.con-dataLayer .inner {
+.con-category .inner{
   border: 4px solid #000;
   border-radius: 10px;
   background-image: radial-gradient(#b4b4b4 20%, transparent 20%),
@@ -116,9 +114,7 @@ h2 strong {
   padding-bottom: 30px;
 }
 
-.con-test h2,
-.con-category h2,
-.con-dataLayer h2 {
+.con-category h2{
   margin: 0;
   padding: 15px 0;
   position: relative;
@@ -162,7 +158,6 @@ h2 strong {
   position: relative;
 }
 
-.con-test p,
 .con-category .txt {
   padding: 0 15px;
 }
@@ -190,30 +185,6 @@ h2 strong {
   border: 1px solid #000;
 }
 
-.con-test p {
-  text-indent: 0rem;
-  background: #fff;
-  display: inline-block;
-  box-shadow: 3px 3px 0px 0px #000;
-  border: 1px solid #000;
-  margin: 15px;
-}
-
-.con-dataLayer .inner {
-  background: #fff;
-  margin: 100px auto;
-  padding-bottom: 0px;
-  display: flex;
-}
-
-.con-dataLayer .inner .custom-event,
-.con-dataLayer .inner .ec-event {
-  width: 50%;
-}
-
-.con-dataLayer .data {
-  padding: 20px;
-}
 
 :focus-visible {
   outline: 0;
@@ -231,35 +202,4 @@ h2 strong {
 
 .ec-event .data div {
   margin-left: 20px;
-}
-
-.con-dataLayer .inner button {
-  padding: 10px 20px;
-  margin: auto;
-  display: block;
-  font-size: 1.1rem;
-  font-family: "Mochiy Pop P One", sans-serif;
-  border: 0;
-  border-radius: 10px;
-  background: #000;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.1s all;
-  margin-bottom: 20px;
-}
-
-.con-dataLayer .inner button:hover {
-  background: #db2b2b;
-  transition: 0.1s all;
-}
-
-section:has(.con-test) {
-  background: #db2b2b;
-  padding: 50px 0;
-  margin: 50px auto;
-}
-
-.con-test .inner {
-  background-image: radial-gradient(#b4b4b4 20%, #fff 20%),
-    radial-gradient(#b4b4b4 20%, #fff 20%);
 }
